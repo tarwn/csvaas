@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "type": "apiHubFileTrigger",
+      "name": "input",
+      "direction": "in",
+      "path": "csvaas/{name}",
+      "connection": "dropbox_DROPBOX"
+    },
+    {
+      "type": "blob",
+      "name": "jsonFile",
+      "direction": "inout",
+      "path": "archive/{name}",
+      "connection": "csvaas_STORAGE"
+    }
+  ],
+  "disabled": false
+}

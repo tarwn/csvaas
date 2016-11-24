@@ -1,0 +1,33 @@
+{
+  "bindings": [
+    {
+      "name": "triggerBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "archive/{name}",
+      "connection": "csvaas_STORAGE"
+    },
+    {
+      "type": "blob",
+      "name": "listBlobIn",
+      "path": "listing/all",
+      "connection": "csvaas_STORAGE",
+      "direction": "in"
+    },
+    {
+      "type": "blob",
+      "name": "listBlobOut",
+      "path": "listing/all",
+      "connection": "csvaas_STORAGE",
+      "direction": "inout"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "public/latest",
+      "connection": "csvaas_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
